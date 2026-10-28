@@ -1,0 +1,308 @@
+{
+	"name": "Cold Bytes Theme",
+	"type": "dark",
+	"semanticHighlighting": true,
+	"colors": {
+		// ==========================================
+		// 1. FONDO Y ESTRUCTURA BASE
+		// ==========================================
+		"editor.background": "#1a1b20",
+		"editor.foreground": "#e9e7e2",
+		"sideBar.background": "#16171c",
+		"sideBar.foreground": "#c9c6c0",
+		"sideBarTitle.foreground": "#52c7b8",
+		"sideBarSectionHeader.background": "#16171c",
+		"sideBarSectionHeader.foreground": "#c9c6c0",
+		"activityBar.background": "#131418",
+		"activityBar.foreground": "#52c7b8",
+		"activityBar.inactiveForeground": "#6d7a99",
+		"activityBar.activeBorder": "#52c7b8",
+		"activityBar.activeBackground": "#1a1b2016",
+		"activityBarBadge.background": "#52c7b8",
+		"activityBarBadge.foreground": "#131418",
+		"statusBar.background": "#131418",
+		"statusBar.foreground": "#c9c6c0",
+		"statusBar.debuggingBackground": "#b39dff",
+		"statusBar.debuggingForeground": "#1a1b20",
+		"statusBar.noFolderBackground": "#131418",
+		"titleBar.activeBackground": "#131418",
+		"titleBar.activeForeground": "#c9c6c0",
+		"titleBar.inactiveBackground": "#131418",
+		"titleBar.inactiveForeground": "#5b6478",
+		"editorGroupHeader.tabsBackground": "#16171c",
+		"tab.inactiveBackground": "#16171c",
+		"tab.inactiveForeground": "#6d7a99",
+		"tab.activeBackground": "#1a1b20",
+		"tab.activeForeground": "#e9e7e2",
+		"tab.activeBorderTop": "#52c7b8",
+		"tab.hoverBackground": "#1f2026",
+		"editorWidget.background": "#202127",
+		"editorWidget.foreground": "#e9e7e2",
+		"input.background": "#202127",
+		"input.foreground": "#e9e7e2",
+		"input.placeholderForeground": "#6d7a99",
+		"dropdown.background": "#202127",
+		"dropdown.foreground": "#e9e7e2",
+		"button.background": "#52c7b8",
+		"button.foreground": "#131418",
+		"button.hoverBackground": "#63d4c5",
+		"button.secondaryBackground": "#262b36",
+		"button.secondaryForeground": "#e9e7e2",
+
+		// ==========================================
+		// 2. BORDES, CURSOR Y SELECCIÓN
+		// ==========================================
+		"sideBar.border": "#2a2b32",
+		"editorGroup.border": "#2a2b32",
+		"tab.border": "#16171c",
+		"widget.border": "#2a2b32",
+		"panel.border": "#2a2b32",
+		"focusBorder": "#52c7b8",
+
+		"editorCursor.foreground": "#52c7b8",
+		"textLink.foreground": "#b39dff",
+		"textLink.activeForeground": "#c9b3ff",
+		"progressBar.background": "#52c7b8",
+		"editor.selectionBackground": "#52c7b840",
+		"editor.selectionHighlightBackground": "#52c7b826",
+		"editor.inactiveSelectionBackground": "#52c7b81f",
+		"editor.wordHighlightBackground": "#b39dff26",
+		"editor.wordHighlightStrongBackground": "#b39dff3d",
+		"editor.findMatchBackground": "#d4b48359",
+		"editor.findMatchHighlightBackground": "#d4b48326",
+		"editor.lineHighlightBackground": "#202127",
+		"editorLineNumber.foreground": "#333a48",
+		"editorLineNumber.activeForeground": "#52c7b8",
+		"editorIndentGuide.background1": "#2a2b32",
+		"editorIndentGuide.activeBackground1": "#3a4150",
+		"list.activeSelectionBackground": "#202127",
+		"list.activeSelectionForeground": "#52c7b8",
+		"list.inactiveSelectionBackground": "#1f2026",
+		"list.hoverBackground": "#1f2026",
+		"list.focusBackground": "#202127",
+
+		// ==========================================
+		// 3. SEMÁNTICA: DIAGNÓSTICOS Y GIT
+		// ==========================================
+		"editorError.foreground": "#ff5c72",
+		"editorWarning.foreground": "#d4b483",
+		"editorInfo.foreground": "#52c7b8",
+		"badge.background": "#52c7b8",
+		"badge.foreground": "#131418",
+		"gitDecoration.addedResourceForeground": "#52c7b8",
+		"gitDecoration.modifiedResourceForeground": "#d4b483",
+		"gitDecoration.deletedResourceForeground": "#ff5c72",
+		"gitDecoration.untrackedResourceForeground": "#b39dff",
+		"gitDecoration.ignoredResourceForeground": "#5b6478",
+		"diffEditor.insertedTextBackground": "#52c7b81f",
+		"diffEditor.removedTextBackground": "#ff5c721f",
+
+		// ==========================================
+		// 4. BRACKET PAIR COLORIZATION
+		// ==========================================
+		"editorBracketHighlight.foreground1": "#52c7b8",
+		"editorBracketHighlight.foreground2": "#b39dff",
+		"editorBracketHighlight.foreground3": "#d4b483",
+		"editorBracketHighlight.foreground4": "#a8e6a0",
+		"editorBracketHighlight.foreground5": "#6d7a99",
+		"editorBracketHighlight.foreground6": "#e9e7e2",
+		"editorBracketPairGuide.background1": "#52c7b833",
+
+		// ==========================================
+		// 5. TERMINAL INTEGRADA
+		// ==========================================
+		"terminal.background": "#1a1b20",
+		"terminal.foreground": "#e9e7e2",
+		"terminal.ansiBlack": "#131418",
+		"terminal.ansiRed": "#ff5c72",
+		"terminal.ansiGreen": "#52c7b8",
+		"terminal.ansiYellow": "#d4b483",
+		"terminal.ansiBlue": "#b39dff",
+		"terminal.ansiMagenta": "#c9a0e8",
+		"terminal.ansiCyan": "#80e5d8",
+		"terminal.ansiWhite": "#e9e7e2",
+		"terminal.ansiBrightBlack": "#5b6478",
+		"terminal.ansiBrightRed": "#ff8091",
+		"terminal.ansiBrightGreen": "#78d9cb",
+		"terminal.ansiBrightYellow": "#e2c69b",
+		"terminal.ansiBrightBlue": "#c4b3ff",
+		"terminal.ansiBrightMagenta": "#dcb8f0",
+		"terminal.ansiBrightCyan": "#a0f0e4",
+		"terminal.ansiBrightWhite": "#ffffff"
+	},
+	"semanticTokenColors": {
+		"class": { "foreground": "#9db8ff", "fontStyle": "italic" },
+		"interface": { "foreground": "#9db8ff", "fontStyle": "italic" },
+		"enum": { "foreground": "#9db8ff", "fontStyle": "italic" },
+		"enumMember": { "foreground": "#d4b483" },
+		"type": { "foreground": "#9db8ff", "fontStyle": "italic" },
+		"typeParameter": { "foreground": "#9db8ff", "fontStyle": "italic" },
+		"namespace": { "foreground": "#9db8ff" },
+		"function": { "foreground": "#b39dff" },
+		"method": { "foreground": "#b39dff" },
+		"decorator": { "foreground": "#a8e6a0" },
+		"parameter": { "foreground": "#c9c6c0" },
+		"variable": { "foreground": "#e9e7e2" },
+		"property": { "foreground": "#e9e7e2" },
+		"string": { "foreground": "#a8e6a0" },
+		"number": { "foreground": "#d4b483" },
+		"keyword": { "foreground": "#52c7b8", "fontStyle": "bold" },
+		"comment": { "foreground": "#6d7a99", "fontStyle": "italic" }
+	},
+	"tokenColors": [
+		{
+			"name": "Comentarios",
+			"scope": ["comment", "punctuation.definition.comment"],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#6d7a99"
+			}
+		},
+		{
+			"name": "Variables y texto genérico",
+			"scope": [
+				"variable",
+				"string constant.other.placeholder",
+				"meta.block variable.other",
+				"support.other.variable"
+			],
+			"settings": {
+				"foreground": "#e9e7e2"
+			}
+		},
+		{
+			"name": "Keywords, control de flujo y storage",
+			"scope": [
+				"keyword",
+				"keyword.control",
+				"storage.type",
+				"storage.modifier",
+				"keyword.other.template",
+				"keyword.other.substitution"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#52c7b8"
+			}
+		},
+		{
+			"name": "Tipos primitivos (int, double, bool...)",
+			"scope": [
+				"storage.type.primitive",
+				"support.type.primitive",
+				"keyword.type",
+				"storage.type.built-in",
+				"storage.type.numeric"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#d4b483"
+			}
+		},
+		{
+			"name": "Funciones y métodos",
+			"scope": [
+				"entity.name.function",
+				"meta.function-call",
+				"variable.function",
+				"support.function",
+				"keyword.other.special-method",
+				"entity.name.method.js",
+				"meta.class-method.js entity.name.function.js"
+			],
+			"settings": {
+				"foreground": "#b39dff"
+			}
+		},
+		{
+			"name": "Strings",
+			"scope": ["string", "constant.other.symbol", "constant.other.key", "string.quoted"],
+			"settings": {
+				"foreground": "#a8e6a0"
+			}
+		},
+		{
+			"name": "Números, constantes y valores literales",
+			"scope": [
+				"constant.numeric",
+				"constant.language",
+				"support.constant",
+				"constant.character",
+				"constant.escape",
+				"constant.other.color"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#d4b483"
+			}
+		},
+		{
+			"name": "Clases, structs, interfaces y tipos",
+			"scope": [
+				"entity.name",
+				"entity.name.type",
+				"entity.name.class",
+				"support.type",
+				"support.class",
+				"support.type.sys-types",
+				"entity.other.inherited-class"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#9db8ff"
+			}
+		},
+		{
+			"name": "Tags y atributos HTML/JSX",
+			"scope": [
+				"entity.name.tag",
+				"meta.tag.sgml",
+				"punctuation.definition.tag",
+				"punctuation.definition.tag.html",
+				"punctuation.definition.tag.begin.html",
+				"punctuation.definition.tag.end.html"
+			],
+			"settings": {
+				"foreground": "#52c7b8"
+			}
+		},
+		{
+			"name": "Atributos",
+			"scope": [
+				"entity.other.attribute-name",
+				"text.html.basic entity.other.attribute-name.html",
+				"entity.other.attribute-name.class"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#c3edb0"
+			}
+		},
+		{
+			"name": "Parámetros",
+			"scope": ["variable.parameter"],
+			"settings": {
+				"foreground": "#c9c6c0"
+			}
+		},
+		{
+			"name": "Operadores y puntuación",
+			"scope": ["punctuation", "meta.tag", "keyword.operator"],
+			"settings": {
+				"foreground": "#7c8797"
+			}
+		},
+		{
+			"name": "Encabezados Markdown",
+			"scope": [
+				"markdown.heading",
+				"markup.heading | markup.heading entity.name",
+				"markup.heading.markdown punctuation.definition.heading.markdown"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#52c7b8"
+			}
+		}
+	]
+}

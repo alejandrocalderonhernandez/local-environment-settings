@@ -1,0 +1,292 @@
+/* ============================================================
+   NORDIC DARK - "Debuggeando Ideas"
+   Paleta Nord (nordtheme.com) | Compatible con VS Code Markdown PDF
+   ============================================================ */
+
+:root {
+  /* Polar Night */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  /* Snow Storm */
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  /* Frost */
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  /* Aurora */
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  /* Roles */
+  --bg: #2e3440;
+  --surface: #3b4252;
+  --surface-2: #434c5e;
+  --code-bg: #272c36;
+  --border: #4c566a;
+  --text: #e5e9f0;
+  --text-dim: #9aa5b8;
+  --accent: #88c0d0;
+  --accent-2: #a3be8c;
+
+  --font-ui: "Inter", -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", "Source Code Pro", Consolas, monospace;
+}
+
+/* === BASE (el fondo va en html para cubrir toda la hoja) === */
+@page {
+  margin: 0; /* el "margen" visual lo da el padding del body */
+}
+
+html {
+  margin: 0;
+  background-color: var(--bg);
+}
+
+body {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  line-height: 1.65;
+  color: var(--text);
+  background-color: var(--bg);
+  margin: 0;
+  padding: 1.1cm 1.4cm; /* arriba/abajo, izquierda/derecha */
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* === PORTADA / LOGO ===
+   Uso en el .md:  <div class="cover"></div>
+   logo.png debe estar junto al .md (ver notas) */
+.cover {
+  /* RUTA ABSOLUTA a Logo.png (raíz del proyecto). Ajusta solo esta línea si es otra carpeta. */
+  background: url("file:///Users/alejandrocalderon/Documents/CousesFilesMD/PDF_Builder/Logo.png") no-repeat center top;
+  background-size: 95px;
+  height: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* === ENCABEZADOS === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--nord6);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  break-after: avoid;
+}
+
+h1 {
+  font-size: 1.9em;
+  color: var(--nord6);
+  padding-bottom: 0.3em;
+  border-bottom: none;
+  border-image: linear-gradient(90deg, var(--nord8), var(--nord10) 55%, transparent) 1;
+  border-bottom: 2px solid;
+}
+h1::before { content: "> "; color: var(--accent-2); }
+
+h2 {
+  font-size: 1.45em;
+  color: var(--nord8);
+}
+h2::before { content: "// "; color: var(--nord3); }
+
+h3 {
+  font-size: 1.2em;
+  color: var(--nord9);
+}
+h3::before { content: "## "; color: var(--nord3); }
+
+h4 { font-size: 1.05em; color: var(--nord7); }
+h5, h6 { font-size: 1em; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* === PÁRRAFOS Y LISTAS === */
+p { margin: 0.7em 0; }
+
+ul, ol { margin: 0.6em 1.2em; }
+li { margin: 0.25em 0; }
+li::marker { color: var(--nord8); }
+
+strong { color: var(--nord6); font-weight: 700; }
+em { color: var(--nord13); }
+
+/* === CÓDIGO INLINE === */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  background-color: rgba(136, 192, 208, 0.12);
+  border: 1px solid rgba(136, 192, 208, 0.25);
+  border-radius: 4px;
+  color: var(--nord8);
+  padding: 1px 5px;
+}
+
+/* === BLOQUES DE CÓDIGO (ventana de terminal) === */
+pre {
+  position: relative;
+  font-family: var(--font-mono);
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--nord8);
+  border-radius: 8px;
+  color: var(--nord4);
+  padding: 34px 14px 12px 14px;
+  margin: 14px 0;
+  overflow-x: auto;
+  break-inside: avoid;
+}
+
+/* tres puntitos tipo macOS */
+pre::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--nord11);
+  box-shadow: 14px 0 0 var(--nord13), 28px 0 0 var(--nord14);
+}
+
+pre code,
+pre.hljs code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font-size: 1em;
+}
+
+pre.hljs {
+  background-color: var(--code-bg) !important;
+  color: var(--nord4) !important;
+}
+
+/* === RESALTADO DE SINTAXIS (Nord) ===
+   Se define aquí para no depender del highlightStyle */
+.hljs { color: var(--nord4); background: transparent; }
+.hljs-comment, .hljs-quote { color: #6b7790; font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-doctag { color: var(--nord9); }
+.hljs-built_in, .hljs-type, .hljs-class .hljs-title, .hljs-title.class_ { color: var(--nord7); }
+.hljs-function .hljs-title, .hljs-title.function_, .hljs-title { color: var(--nord8); }
+.hljs-string, .hljs-regexp, .hljs-addition { color: var(--nord14); }
+.hljs-number, .hljs-symbol, .hljs-bullet { color: var(--nord15); }
+.hljs-attr, .hljs-attribute, .hljs-variable, .hljs-template-variable { color: var(--nord7); }
+.hljs-name, .hljs-tag { color: var(--nord9); }
+.hljs-meta, .hljs-meta .hljs-keyword { color: var(--nord12); }
+.hljs-deletion { color: var(--nord11); }
+.hljs-section { color: var(--nord8); font-weight: 700; }
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: 700; }
+
+/* === TABLAS === */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 16px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--bg);
+  break-inside: avoid;
+}
+
+th, td {
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nord8);
+  background-color: var(--surface-2);
+  border-bottom: 2px solid var(--nord8);
+}
+
+tr:last-child td { border-bottom: none; }
+
+tr:nth-child(even) td { background-color: rgba(59, 66, 82, 0.55); }
+
+/* === CITAS / CALLOUTS === */
+blockquote {
+  border-left: 4px solid var(--nord8);
+  background: linear-gradient(90deg, rgba(136, 192, 208, 0.12), rgba(136, 192, 208, 0.02));
+  border-radius: 0 8px 8px 0;
+  padding: 10px 16px;
+  margin: 16px 0;
+  font-style: normal;
+  color: var(--nord4);
+  break-inside: avoid;
+}
+blockquote p { margin: 0.4em 0; }
+
+/* === ENLACES === */
+a {
+  color: var(--nord8);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--nord8);
+}
+
+/* === IMÁGENES === */
+img {
+  max-width: 100%;
+  display: block;
+  margin: 12px auto;
+  border-radius: 6px;
+  break-inside: avoid;
+}
+
+/* === SEPARADORES === */
+hr {
+  border: none;
+  height: 1px;
+  margin: 2em 0;
+  background: linear-gradient(90deg, transparent, var(--nord3), transparent);
+}
+
+/* === MARCAS / TECLAS === */
+mark { background: rgba(235, 203, 139, 0.25); color: var(--nord13); padding: 0 3px; border-radius: 3px; }
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 1px 6px;
+  color: var(--nord6);
+}
+
+/* === FIRMA AL FINAL DEL DOCUMENTO === */
+body::after {
+  content: "// Rene Calderón (Debuggeando ideas)";
+  display: block;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--nord3);
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--nord3);
+}
+
+/* ============================================================
+   FIN DE ESTILOS
+   ============================================================ */

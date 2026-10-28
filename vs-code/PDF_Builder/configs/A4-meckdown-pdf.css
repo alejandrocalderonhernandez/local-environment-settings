@@ -1,0 +1,525 @@
+/* ============================================================
+   PROFESSIONAL RESUME — SLATE BLUE & STANDARD BLUE LINKS
+   Diseño sobrio, compacto y optimizado para PDF A4
+   ============================================================ */
+
+/* === GOOGLE FONT === */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap");
+
+/* === CONFIGURACIÓN DE PÁGINA === */
+@page {
+  size: A4;
+  margin: 1.25cm 1.35cm 1.3cm 1.35cm;
+}
+
+/* === VARIABLES SEMÁNTICAS === */
+:root {
+  /* Color principal (Azul grisáceo / Slate Blue) */
+  --primary: #3b4d61;           
+  --primary-soft: #f1f5f9;      
+  --primary-softest: #f8fafc;   
+
+  /* Azul estándar profesional para enlaces */
+  --link-color: #2563eb;        
+
+  /* Líneas y bordes tenues */
+  --heading-border: #94a3b8;    
+
+  /* Textos y estructura general */
+  --text-primary: #18181B;      
+  --text-secondary: #52525B;
+  --text-muted: #71717A;
+
+  --border: #E4E4E7;
+  --border-light: #F4F4F5;
+  --white: #ffffff;
+}
+
+/* === DOCUMENTO === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--white);
+}
+
+body {
+  font-family:
+    "Lato",
+    "Helvetica Neue",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  font-size: 9.1pt;
+  line-height: 1.4;
+  font-weight: 400;
+
+  color: var(--text-primary);
+  background: var(--white);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   ENCABEZADOS
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    "Lato",
+    "Helvetica Neue",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* Nombre principal (H1) */
+h1 {
+  margin: 0 0 0.06cm;
+  padding: 0;
+  font-size: 13.8pt;
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.12px;
+  color: var(--primary);
+  border: none;
+}
+
+/* Secciones principales (H2) con línea inferior tenue */
+h2 {
+  margin: 0.24cm 0 0.08cm;
+  padding: 0 0 0.025cm;
+  font-size: 7.9pt;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--primary);
+  border-bottom: 1px solid var(--heading-border);
+}
+
+/* Puestos o subsecciones */
+h3 {
+  margin: 0.18cm 0 0.04cm;
+  padding: 0;
+  font-size: 9.1pt;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Proyectos */
+h4 {
+  margin: 0.15cm 0 0.035cm;
+  padding: 0;
+  font-size: 8.7pt;
+  line-height: 1.18;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+h5,
+h6 {
+  margin: 0.12cm 0 0.03cm;
+  padding: 0;
+  font-size: 8.5pt;
+  line-height: 1.18;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* === TEXTO === */
+p {
+  margin: 0.07cm 0 0.14cm;
+  color: var(--text-primary);
+
+  orphans: 3;
+  widows: 3;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+em {
+  color: var(--text-secondary);
+}
+
+/* === ENLACES Y DATOS DE CONTACTO (Cursivas, delgados y en azul clásico de link) === */
+a {
+  color: var(--link-color);
+  font-weight: 400;           /* Delgados (sin negrita) */
+  font-style: italic;         /* En cursivas */
+  text-decoration: none;
+  text-transform: none !important;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[href]::after {
+  content: none !important;
+}
+
+/* ============================================================
+   LISTAS
+   ============================================================ */
+
+ul,
+ol {
+  margin: 0.08cm 0 0.17cm;
+  padding-left: 0.44cm;
+}
+
+li {
+  margin: 0 0 0.075cm;
+  padding-left: 0.025cm;
+  color: var(--text-primary);
+
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+li::marker {
+  color: var(--primary);
+  font-size: 0.86em;
+}
+
+li > p {
+  margin: 0;
+}
+
+/* ============================================================
+   TABLAS
+   ============================================================ */
+
+table {
+  width: 100%;
+  margin: 0.14cm 0 0.27cm;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  font-size: 8.4pt;
+  line-height: 1.32;
+
+  color: var(--text-primary);
+  background: var(--white);
+  border: 1px solid var(--border);
+
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+thead {
+  display: table-header-group;
+}
+
+tbody {
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+tfoot {
+  display: table-footer-group;
+}
+
+tr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  page-break-after: auto;
+}
+
+th {
+  padding: 0.11cm 0.15cm;
+  font-weight: 700;
+  text-align: left;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border: 1px solid var(--border);
+
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+td {
+  padding: 0.12cm 0.15cm;
+  vertical-align: top;
+  color: var(--text-primary);
+  background: var(--white);
+  border: 1px solid var(--border-light);
+
+  overflow-wrap: anywhere;
+  word-break: normal;
+
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+tbody tr:nth-child(even) td {
+  background: var(--primary-softest);
+}
+
+/* Primera columna de tablas */
+td:first-child,
+th:first-child {
+  width: 26%;
+}
+
+/* Segunda columna */
+td:nth-child(2),
+th:nth-child(2) {
+  width: 74%;
+}
+
+td br {
+  display: block;
+  content: "";
+  margin-bottom: 0.035cm;
+}
+
+/* ============================================================
+   TABLA DE CONTACTO
+   ============================================================ */
+
+.contact-table {
+  margin-top: 0.07cm;
+  margin-bottom: 0.22cm;
+  font-size: 8.15pt;
+  border: 1px solid var(--border);
+
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.contact-table th {
+  width: auto;
+  padding: 0.08cm 0.12cm 0.04cm;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border: 1px solid var(--border);
+}
+
+.contact-table td {
+  width: auto;
+  padding: 0.035cm 0.12cm 0.085cm;
+  color: var(--link-color);
+  background: var(--white);
+  border: 1px solid var(--border-light);
+}
+
+.contact-table tbody tr:nth-child(even) td {
+  background: var(--primary-softest);
+}
+
+/* ============================================================
+   OTROS ELEMENTOS
+   ============================================================ */
+
+hr {
+  height: 1px;
+  margin: 0.27cm 0;
+  border: none;
+  background: var(--heading-border);
+}
+
+blockquote {
+  margin: 0.18cm 0;
+  padding: 0.12cm 0.2cm;
+  color: var(--text-secondary);
+  font-style: normal;
+  background: var(--primary-soft);
+  border-left: 3px solid var(--heading-border);
+}
+
+/* === CÓDIGO === */
+code {
+  padding: 0.02cm 0.06cm;
+  font-family:
+    "JetBrains Mono",
+    "Fira Code",
+    Consolas,
+    monospace;
+  font-size: 0.86em;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border-radius: 3px;
+}
+
+pre {
+  margin: 0.15cm 0;
+  padding: 0.18cm;
+  font-family:
+    "JetBrains Mono",
+    "Fira Code",
+    Consolas,
+    monospace;
+  font-size: 7.9pt;
+  line-height: 1.38;
+  color: var(--text-primary);
+  background: var(--primary-softest);
+  border: 1px solid var(--border);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* === IMÁGENES === */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.16cm auto;
+}
+
+/* ============================================================
+   CLASES OPCIONALES PARA EL CV
+   ============================================================ */
+
+.resume-title {
+  margin: 0 0 0.16cm;
+  font-size: 9.4pt;
+  line-height: 1.2;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.meta {
+  font-size: 8.2pt;
+  color: var(--text-muted);
+}
+
+.company {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.experience {
+  margin-bottom: 0.22cm;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.experience-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.32cm;
+  margin-bottom: 0.035cm;
+}
+
+.experience-date {
+  flex-shrink: 0;
+  font-size: 8.1pt;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tag {
+  display: inline-block;
+  margin: 0.02cm 0.035cm 0.02cm 0;
+  padding: 0.02cm 0.09cm;
+  font-size: 7.25pt;
+  font-weight: 600;
+  color: var(--primary);
+  background: var(--primary-soft);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+
+/* ============================================================
+   SALTOS DE PÁGINA
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+blockquote,
+pre {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+h2 + *,
+h3 + *,
+h4 + * {
+  page-break-before: avoid;
+  break-before: avoid;
+}
+
+h2 + table,
+h3 + table,
+h4 + table {
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+/* ============================================================
+   IMPRESIÓN
+   ============================================================ */
+
+@media print {
+  body {
+    font-size: 9pt;
+    background: var(--white);
+  }
+
+  table {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tbody {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  th,
+  td {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+
+  li,
+  blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .contact-table {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* ============================================================
+   FIN DEL ESTILO
+   ============================================================ */

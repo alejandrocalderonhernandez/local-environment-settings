@@ -1,0 +1,52 @@
+{
+    "markdown-pdf.format": "A4",
+    "markdown-pdf.styles": [
+    "/Users/alejandrocalderon/Documents/CousesFilesMD/PDF_Builder/configs/A4-configs.json"
+    ],
+
+    "markdown-pdf.margin.top": "1.1cm",
+    "markdown-pdf.margin.bottom": "1.1cm",
+    "markdown-pdf.margin.left": "1.4cm",
+    "markdown-pdf.margin.right": "1.4cm",
+
+    "markdown-pdf.scale": 1, 
+    "markdown-pdf.quality": 100,
+
+    "markdown-pdf.executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "markdown-pdf.displayHeaderFooter": false,
+
+
+  "editor.accessibilityPageSize": 2000,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
+  "editor.fontLigatures": true,
+
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.mouseWheelScrollSensitivity": 3,
+
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  "window.zoomLevel": 3.0,
+
+  "markdown-preview-enhanced.printBackground": true,
+
+  "docker.extension.enableComposeLanguageServer": false,
+
+  "claudeCode.preferredLocation": "panel",
+
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 400,
+  "js/ts.experimental.useTsgo": true,
+  "workbench.editor.editorActionsLocation": "titleBar",
+  "workbench.colorTheme": "Cold Bytes Theme",
+  "workbench.editor.useModal": "off",
+  "workbench.iconTheme": "catppuccin-perfect-mocha",
+  "gitlens.graph.details.location": "auto"
+
+}
